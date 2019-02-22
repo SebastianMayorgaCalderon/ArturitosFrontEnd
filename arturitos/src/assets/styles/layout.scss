@@ -1,0 +1,36 @@
+@import '../../index.scss';
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+@mixin banner {
+  color: $color-white;
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin banner-sm {
+  padding: 1.87rem 2.25rem;
+}
+
+@mixin banner-md {
+  padding: 2.5rem 3.75rem;
+}
+
+@mixin banner-lg {
+  padding: 6.25rem 10.93rem;
+}
+
+@mixin icon-container-big {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1.87rem;
+}

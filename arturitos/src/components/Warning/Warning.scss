@@ -1,0 +1,26 @@
+.default {
+        color: white;
+        font-size: 1rem;
+        padding: 1rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -ms-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+         opacity: 1;
+}
+.default.hide{
+        opacity: 0;
+}
+.success{
+        background-color: #5ef42c50
+}
+.error-W{
+        background-color: #ea5d5d90;
+}
+.warning{
+        background-color: #ffda6d50
+}

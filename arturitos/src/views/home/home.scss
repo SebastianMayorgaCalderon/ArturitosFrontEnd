@@ -1,0 +1,102 @@
+.home-wrapper{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+}
+
+.logo-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.my-logo{
+        width: 130px;
+}
+
+.section{
+        flex-basis: 100%
+}
+
+.filter-controls__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        margin: 1rem;
+}
+.filter-buttons__wrapper{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+}
+.filter-input__wapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5        0%;
+}
+.stars-list__card{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+}
+@media only screen and (max-width: 500px) {
+        .my-logo{
+                width: 30%;
+        }
+        .filter-input__wapper{
+                width: 100%;
+        }
+   }
+
+
+.body-list_wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+}
+
+.celestial-body-list__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        align-self: stretch;
+}
+.paginate-controls ul{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+       
+}
+.paginate-controls li{
+        font-size: 1.5rem;
+        color:#FFF;
+        cursor: pointer;
+        margin: 1rem;
+}
+.pagination-controls__item--activate{
+        width: 2rem;
+        color:rgb(255, 208, 0);    
+}
+
+
+
+@media only screen and (max-width: 320px) {
+        .filter-controls__container{
+                width: 100%;
+                padding: 0.5rem;
+        }
+   }
+   @media only screen and (min-width: 600px) {
+        .body-list_wrapper{
+                flex-direction: row;
+                flex-wrap: wrap;
+        }
+   }

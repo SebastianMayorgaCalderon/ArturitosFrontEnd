@@ -1,0 +1,15 @@
+@import '../../index.scss';
+
+@mixin message-colors {
+  &--success {
+    border: 1px solid $color-success-dark;
+    background-color: $color-success;
+    color: $color-success-dark;
+  }
+
+  &--error {
+    border: 1px solid $color-error-dark;
+    background-color: $color-error;
+    color: $color-error-dark;
+  }
+}

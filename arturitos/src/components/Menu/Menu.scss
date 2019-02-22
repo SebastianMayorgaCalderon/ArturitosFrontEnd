@@ -1,0 +1,42 @@
+.menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+      }
+      .menu ul {
+        display: flex;
+        flex-direction: row;
+        font-size: 2rem;
+        padding: 0px;
+align-items: center;        
+      }
+      .menu li {
+        list-style: outside none none;
+        margin: 10px 0px;
+        padding: 0;
+        margin: 1rem;
+        color: #000;
+        cursor: pointer;
+      }
+      .menu li:hover {
+        color: #ff0000;
+      }
+      .menu a{
+              color :#000
+      }
+      @media only screen and (max-width: 600px) {
+       .menu ul{
+               flex-direction: column;
+       }
+   }
+
+   .grow-efect {
+    transition: all .2s ease-in-out;
+}
+
+.grow-efect:hover {
+    transform: scale(1.3);
+    opacity: 500;
+}
