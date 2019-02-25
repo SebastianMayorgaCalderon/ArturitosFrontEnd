@@ -13,6 +13,7 @@ import BurgerIcon from './components/BurgerIcon/BurgerIcon'
 import Menu from './components/Menu/Menu'
 import HomeView from './views/home/home'
 import CelestialBodyDetailsView from './views/celestial-body-type/celestial-body'
+import CartView from './views/cart/cart'
 
 const contentStyle = {
 	background: 'rgba(255,255,255,0)',
@@ -30,12 +31,13 @@ class App extends Component {
 						<Route path="/sign-up" component={SignUpView} />
 						<Route path="/home/:id" component={CelestialBodyDetailsView} />
 						<Route path="/home" component={HomeView} />
+						<Route path="/my-cart" component={CartView} />
 					</Switch>
 					<Popup
 						modal
 						overlayStyle={{ background: '#FFFFFF99' }}
 						contentStyle={contentStyle}
-						closeOnDocumentClick={false}
+						closeOnDocumentClick
 						trigger={open => (
 							<BurgerIcon open={open} style={{ right: '2rem' }} />
 						)}

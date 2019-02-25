@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './Card.scss'
 
-const Card = ({ children, styles }) => (
-	<div className="card-container" style={styles}>
+const Card = ({ children, ...props }) => (
+	<div className="card-container" {...props}>
 		{children}
 	</div>
 )

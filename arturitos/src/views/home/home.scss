@@ -17,7 +17,7 @@
 }
 
 .section{
-        flex-basis: 100%
+        width: 100%
 }
 
 .filter-controls__container{
@@ -31,6 +31,7 @@
 .filter-buttons__wrapper{
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         width: 100%;
 }
 .filter-input__wapper{
