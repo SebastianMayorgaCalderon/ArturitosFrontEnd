@@ -1,0 +1,28 @@
+
+h2{
+        margin: 0;
+        color: #FFF;
+}
+canvas{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+.conatiner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-image: url('./assets/images/10-7.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+.full-page__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+}

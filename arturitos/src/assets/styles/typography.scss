@@ -1,0 +1,7 @@
+@import '../../index.scss';
+
+@mixin heading-primary {
+  font-family: $font-family-primary;
+  font-weight: 300;
+  text-align: center;
+}

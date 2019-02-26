@@ -1,0 +1,17 @@
+.my-button{
+        padding: 0.5rem;
+        margin: 0.5rem;
+        background-color: #00000080;
+        color: #FFF;
+        border:none;
+        cursor: pointer;
+        font-size: 1.2rem;
+}
+.clickable:hover{
+        background-color: #00000090;
+}
+
+.selected{
+  background-color: #FFFFFF80;
+  color:#000
+}

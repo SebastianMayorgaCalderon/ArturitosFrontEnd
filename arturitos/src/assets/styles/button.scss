@@ -1,0 +1,25 @@
+@import '../../index.scss';
+@import './layout.scss';
+
+@mixin button {
+  @include flex-center;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+@mixin button-primary {
+  text-transform: uppercase;
+  font-family: $font-family-secondary;
+}
+
+@mixin button-md {
+  padding: .62rem .93rem;
+  font-size: 1.25rem;
+}
+
+@mixin button-hamburger {
+  width: 2.25rem;
+  height: 2px;
+  background-color: $color-background;
+  display: inline-block;
+}

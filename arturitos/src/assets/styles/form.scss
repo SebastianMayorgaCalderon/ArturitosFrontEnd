@@ -1,0 +1,43 @@
+@import '../../index.scss';
+
+@mixin form {
+
+}
+
+@mixin form-control {
+  flex: 1 1 100%;
+  max-width: 25rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+
+  &:last-of-type {
+    margin-bottom: 3rem;
+  }
+}
+
+@mixin form-input {
+  flex: 1 1 100%;
+  width: 100%;
+  background-color: $color-default-dark-2;
+  color: $color-white;
+
+  border: 2px solid $color-white;
+  box-shadow: none;
+  padding: 0.62rem 0.93rem;
+
+  font-size: 1rem;
+  font-family: $font-family-primary;
+
+  &:focus {
+    background-color: $color-white;
+    color: $color-default-dark-2;
+  }
+}
+
+@mixin form-label {
+  flex: 1 1 100%;
+  margin-bottom: 0.93rem;
+  font-size: 1.25rem;
+}

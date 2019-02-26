@@ -1,0 +1,138 @@
+body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        height: 100%;
+        background-image: url('./assets/images/10-7.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+}
+
+code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+// VARIABLES
+$color-ravenclaw: #004E80;
+$color-ravenclaw-dark: #22254a;
+$color-ravenclaw-dark-2: #121424;
+
+$color-slytherin: #005416;
+$color-slytherin-dark: #003e00;
+$color-slytherin-dark-2: #000b00;
+
+$color-hufflepuff: #F2B800;
+$color-hufflepuff-dark: #996E00;
+$color-hufflepuff-dark-2: #664900;
+
+$color-gryffindor: #8d0000;
+$color-gryffindor-dark: #D30004;
+$color-gryffindor-dark-2: #A00003;
+
+$color-default: #003E51;
+$color-default-dark: #002B39;
+$color-default-dark-2: #000506;
+$color-default-light: #5C8490;
+
+$color-default-secondary: #810041;
+
+$color-error: #FFDDDF;
+$color-error-dark: #FF5964;
+
+$color-success: #CEEDCF;
+$color-success-dark: #227A68;
+
+$color-quiz-dawn: rgb(82, 24, 23);
+$color-quiz-dusk: rgb(207, 59, 1);
+
+$color-white: #FFF;
+$color-black: #333;
+$color-black-light: #555;
+$color-background: #E8E8E4;
+
+/* FONT FAMILY */
+$font-family-primary: 'Merriweather', serif;
+$font-family-secondary: 'Roboto', sans-serif;
+
+/* RESPONSIVE BREAKPOINTS */
+$bp-xl: 80em; // 1200px
+$bp-lg: 62em; // 992px
+$bp-md: 48em; // 768px
+$bp-sm: 36em;// 576px
+
+// RESET
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.pagination {
+  display: flex;
+  margin-bottom: 1.87rem;
+  
+  li {
+    color: $color-black;
+    transition: color .3s;
+  }
+
+  a {
+    padding: .53rem .93rem;
+    min-height: 3.75rem;
+    min-width: 3.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    @media screen and (min-width: $bp-sm) {
+      padding: .93rem 1.25rem;
+    }
+  }
+
+  li.pagination__page--ravenclaw {
+    color: $color-ravenclaw;
+  }
+
+  li.pagination__page--gryffindor {
+    color: $color-gryffindor;
+  }
+
+  li.pagination__page--slytherin {
+    color: $color-slytherin;
+  }
+
+  li.pagination__page--hufflepuff {
+    color: $color-hufflepuff;
+  }
+}
