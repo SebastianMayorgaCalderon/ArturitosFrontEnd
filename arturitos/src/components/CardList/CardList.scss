@@ -26,3 +26,9 @@
 .selected-card{
         color: #000;
 }
+
+@media only screen and (max-width: 600px) {
+        .single-card-wrapper{
+                flex-direction: column;
+        }
+}

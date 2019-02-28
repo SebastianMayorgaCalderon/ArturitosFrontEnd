@@ -22,5 +22,6 @@ export {
         addCard,
         fetchUserBodies,
         sellStar,
-        removeCard
+        removeCard,
+        logout
 } from './user-actions/user-actions'

@@ -20,9 +20,7 @@ align-items: center;
         color: #000;
         cursor: pointer;
       }
-      .menu li:hover {
-        color: #ff0000;
-      }
+
       .menu a{
               color :#000
       }
@@ -37,6 +35,6 @@ align-items: center;
 }
 
 .grow-efect:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
     opacity: 500;
 }

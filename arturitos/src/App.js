@@ -61,7 +61,7 @@ class App extends Component {
                                                         <BurgerIcon open={open} style={{ right: '2rem' }} />
                                                 )}
                                         >
-                                                {close => <Menu close={close} />}
+                                                {close => <Menu close={close}  history = {this.props.history}/>}
                                         </Popup>
                                 </div>
                         </div>

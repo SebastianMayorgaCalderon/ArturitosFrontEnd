@@ -24,6 +24,25 @@ const initialState = {
 const userReducer = (state = initialState, action) => {
         const { payload, type } = action
         switch (type) {
+                case actionTypes.LOG_OUT:
+                        return {
+                                ...state,
+                                username: null,
+                                email: null,
+                                token: null,
+                                waitingForResponce: false,
+                                errorMsj: null,
+                                suceedMessage: null,
+                                addingCard: false,
+                                addingCardError: null,
+                                cards: [],
+                                userBodies: [],
+                                userBodiesCantPages: null,
+                                userBodiesCurrentPage: null,
+                                size: 5,
+                                sellingStar: false,
+                                sellingStarMessaje: null
+                        }
                 case actionTypes.LOGIN:
                 case actionTypes.SIGN_UP:
                 case actionTypes.FETCH_USER_BODIES:

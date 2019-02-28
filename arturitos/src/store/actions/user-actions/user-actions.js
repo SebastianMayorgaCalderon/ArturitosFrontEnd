@@ -26,7 +26,8 @@ export const actionTypes = {
         SELL_STAR_ERROR: 'user/SELL_STAR_ERROR',
         REMOVE_CARD: 'user/REMOVE_CARD',
         REMOVE_CARD_SUCCESS:'user/REMOVE_CARD_SUCCESS',
-        REMOVE_CARD_ERROR: 'user/REMOVE_CARD_ERROR'
+        REMOVE_CARD_ERROR: 'user/REMOVE_CARD_ERROR',
+        LOG_OUT:'user/LOG_OUT'
 }
 
 const apiUrl = `${BASE_URL}/user`
@@ -56,6 +57,10 @@ export const login = credentials => dispatch => {
 			}
 			dispatch(objToDispatch)
 		})
+}
+
+export const logout = () => dispatch => {
+        dispatch({type: actionTypes.LOG_OUT})
 }
 
 export const fetchCards = (token) => dispatch => {
@@ -212,6 +217,7 @@ export const fetchUserBodies = page => dispatch=> {
 			dispatch({ type: actionTypes.FETCH_USER_BODIES_ERROR })
 		})
 }
+
 export const sellStar = ({id,token})=> dispatch=>{
         dispatch({type:actionTypes.SELL_STAR})
         const myApiUrl = `${BASE_URL}/product/user-products/resell`
