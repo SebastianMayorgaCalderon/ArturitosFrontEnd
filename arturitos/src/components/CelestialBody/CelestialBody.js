@@ -11,7 +11,7 @@ const CelestialBody = ({ body, onNavigate }) => (
     style={{ backgroundImage: `url('${body.productImages[0].imageUrl}')` }}
     onClick={() => onNavigate(body.id)}
   >
-    <Card style={{ height: '100%', backgroundColor: '#00000050' }}><h3>{body.productName}</h3></Card>
+    <Card fullheight><h3>{body.productName}</h3></Card>
 
   </div>
 )

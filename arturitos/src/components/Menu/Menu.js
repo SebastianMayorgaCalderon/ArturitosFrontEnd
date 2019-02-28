@@ -22,7 +22,7 @@ const optsForOutsideUsers = [
 const optForLoggedUsers = [
 	{
 		path: '/my-profile',
-		label: 'My profile',
+		label: 'My collection',
 	},
 ]
 const Menu = ({ close, token }) => {
@@ -31,10 +31,10 @@ const Menu = ({ close, token }) => {
 		<div className="menu">
 			<ul>
 				<li onClick={close} className="grow-efect">
-					<Link to="/home">Home</Link>
+					<Link to="/stars">R2DT0S</Link>
 				</li>
-				<li onClick={close} className="grow-efect">
-					<Link to="/stars">Stars</Link>
+                                <li onClick={close} className="grow-efect">
+					<Link to="/home">Stars</Link>
 				</li>
 				<li onClick={close} className="grow-efect">
 					<Link to="/my-cart">Cart</Link>

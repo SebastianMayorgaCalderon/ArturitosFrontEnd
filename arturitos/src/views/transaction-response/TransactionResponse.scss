@@ -1,0 +1,26 @@
+.response-view-wrapper{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.response-container{
+        width: 90%;
+}
+
+.response-info-wrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color:#FFF;
+}
+.info{
+        color:#FFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}

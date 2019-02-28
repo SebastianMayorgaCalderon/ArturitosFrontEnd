@@ -6,9 +6,10 @@
         border:none;
         cursor: pointer;
         font-size: 1.2rem;
+        font-family: 'Space Mono', monospace; 
 }
 .clickable:hover{
-        background-color: #00000090;
+        background-color: #000000;
 }
 
 .selected{

@@ -5,8 +5,8 @@ import {
 
 const initialState = {
 	pageNum: 0,
-	size: 4,
-	bodys: [],
+	size: 6,
+	bodies: [],
 	categories: [],
 	errorMsj: null,
 	waitingForResponse: false,
@@ -30,7 +30,7 @@ const starsReducer = (state = initialState, action) => {
 	case actionTypes.FETCH_ALL_CELESTIAL_BODIES_BY_TYPE_SUCCESS:
 		return {
 			...state,
-			bodys: payload.content,
+			bodies: payload.content,
 			waitingForResponse: false,
 			totalElements: payload.totalElements,
 			totalPages: payload.totalPages,
@@ -55,7 +55,12 @@ const starsReducer = (state = initialState, action) => {
 			...state,
 			waitingForResponse: false,
 			errorMsj: payload.errorMsj
-		}
+                }
+        case actionTypes.DESELECT_BODY:
+                return {
+                        ...state,
+                        selectedBody:null
+                }
 	default:
 		return { ...state }
 	}
