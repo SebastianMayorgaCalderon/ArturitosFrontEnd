@@ -48,7 +48,7 @@ class TransactionResponse extends Component {
                 this.props.onResetStatus();
         }
         loadConfirmationView = () => {
-                const { success, waitingForResponceCart, errorMsj } = this.props
+                const { success, waitingForResponceCart } = this.props
                 return (
                         <div className="response-info-wrapper">
                                 {

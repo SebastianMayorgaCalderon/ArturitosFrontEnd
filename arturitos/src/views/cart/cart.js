@@ -6,7 +6,6 @@ import './cart.scss'
 import MyButton from '../../components/MyButton/MyButton'
 import { removeProductFromOrder, makeOrder } from '../../store/actions/index'
 import CelestialBody from '../../components/CelestialBody/CelestialBody'
-import StripeCheckout from 'react-stripe-checkout'
 
 class CartView extends Component {
 

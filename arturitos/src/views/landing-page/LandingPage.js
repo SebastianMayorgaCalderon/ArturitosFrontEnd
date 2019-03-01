@@ -9,7 +9,7 @@ export default class LandingPage extends Component {
         render() {
                 return (
                         <div className="landing-wrapper">
-                                <Card fullheight>
+                                <Card>
                                         <div className="landing-section ">
                                                 <img src={Logo} alt="R2dtos logo" />
                                                 <div className="divider" />
@@ -17,7 +17,7 @@ export default class LandingPage extends Component {
                                                 <h2>― Norman Vincent Peale</h2>
                                                 <div className="features">
                                                         <div className="fetures_single">
-                                                                <Card transparent>
+                                                                <Card transparent >
                                                                         <div className="feture-info">
                                                                                 <h3>Buy Stars!</h3>
                                                                                 <h4>Buy stars, constallations, galaxies, nebulae, asteroids!</h4>
